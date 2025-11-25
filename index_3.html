@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>GORBOYLABS</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <title>GORBOY LABS — Meme.Build.Repeat.</title>
+
+  <link rel="stylesheet" href="labs.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body class="labs-body">
+
+  <!-- BACKGROUND -->
+
+  <div class="labs-grid-overlay"></div>
+
+  <div class="labs-scanlines"></div>
+
+  <!-- FIXED WATERMARK -->
+
+  <div class="labs-watermark">
+
+    <img
+
+      src="https://i.ibb.co/4ZVND7sX/file-000000008c9871f48f577ad1e1c9ff2b.png"
+
+      class="labs-watermark-logo"
+
+      alt="Gorboy Labs Watermark"
+
+    />
+
+  </div>
+
+  <div class="labs-site">
+
+    <!-- HERO -->
+
+    <header class="labs-hero">
+
+      <div class="labs-logo-wrap">
+
+        <img
+
+          src="https://i.ibb.co/4ZVND7sX/file-000000008c9871f48f577ad1e1c9ff2b.png"
+
+          class="labs-logo"
+
+          alt="Gorboy Labs Banner"
+
+        />
+
+      </div>
+
+      <h1 class="labs-title">GORBOY LABS</h1>
+
+      <div class="labs-subtitle">MEME.BUILD.REPEAT.</div>
+
+      <p class="labs-tagline">
+
+        A zero-budget toolkit for meme founders on Gorbagana.
+
+      </p>
+
+      <div class="labs-actions">
+
+        <a href="#widgets" class="labs-btn">Widgets</a>
+
+        <a href="#integration" class="labs-btn labs-btn--ghost">Integration</a>
+
+      </div>
+
+    </header>
+
+    <!-- WHAT IS LABS -->
+
+    <section class="labs-section">
+
+      <h2 class="labs-section-title"><span>00</span> · what is gorboy labs</h2>
+
+      <p class="labs-body-text">
+
+        Gorboy Labs is the experimental wing of the Gorboy ecosystem — tools, generators,
+
+        mini-widgets and add-ons for meme founders.
+
+      </p>
+
+      <p class="labs-body-text">
+
+        Pure HTML / CSS / JS. Zero VC. Zero budget. Built for people who
+
+        want to ship fast on <strong>Gorbagana</strong>.
+
+      </p>
+
+    </section>
+
+    <!-- WIDGET STACK -->
+
+    <section id="widgets" class="labs-section">
+
+      <h2 class="labs-section-title"><span>01</span> · widget stack</h2>
+
+      <div class="labs-widgets-grid">
+
+        <!-- GORBOY FLIPPER -->
+
+        <article class="labs-widget" id="flipper">
+
+          <div class="labs-widget-label labs-widget-label--live">live</div>
+
+          <h3 class="labs-widget-title">Gorboy Flipper</h3>
+
+          <div class="labs-widget-tag">flagship widget · ggt snap</div>
+
+          <p class="labs-widget-desc">
+
+            Live risk snapshot widget for any Gorbagana token. Reads your mint via <code>?mint=</code>
+
+            and streams Neon Field snaps from GORBOY GUARD TERMINAL (GGT).
+
+          </p>
+
+          <h4 class="labs-mini-title">How to embed</h4>
+
+          <ol class="labs-steps labs-steps--compact">
+
+            <li>Copy the iframe below.</li>
+
+            <li>Paste it into your meme website.</li>
+
+            <li>Replace <strong>YOUR_MINT_HERE</strong> with your token mint.</li>
+
+          </ol>
+
+          <div class="labs-code-wrap">
+
+            <button class="copy-btn" data-copy="#flipper-code">COPY</button>
+
+            <pre id="flipper-code" class="labs-code">
+
+&lt;!-- Gorboy Flipper iframe widget (Gorbagana only) --&gt;
+
+&lt;iframe
+
+  src="https://www.ggt.wtf/flipper.html?mint=YOUR_MINT_HERE"
+
+  style="
+
+    width: 480px;
+
+    max-width: 100%;
+
+    height: 220px;
+
+    border: 0;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    display:block;
+
+    margin:0 auto;
+
+  "
+
+  loading="lazy"
+
+&gt;&lt;/iframe&gt;
+
+            </pre>
+
+          </div>
+
+          <a
+
+            href="https://www.ggt.wtf/flipper.html?mint=GNFqCqaU9R2jas4iaKEFZM5hiX5AHxBL7rPHTCpX5T6z"
+
+            target="_blank"
+
+            class="labs-btn labs-btn--small"
+
+          >
+
+            Open Gorboy Flipper demo
+
+          </a>
+
+        </article>
+
+        <!-- MEME FRAME GENERATOR -->
+
+        <article class="labs-widget" id="meme-frames">
+
+          <div class="labs-widget-label labs-widget-label--live">live</div>
+
+          <h3 class="labs-widget-title">Meme Frame Generator</h3>
+
+          <div class="labs-widget-tag">labs frames</div>
+
+          <p class="labs-widget-desc">
+
+            Create memes inside Gorboy Labs' branded frames.<br>
+
+            Export clean images ready for X/Telegram.
+
+          </p>
+
+          <h4 class="labs-mini-title">How to embed</h4>
+
+          <ol class="labs-steps labs-steps--compact">
+
+            <li>Copy the compact iframe below.</li>
+
+            <li>Paste into your website / Webflow / Notion / any HTML block.</li>
+
+          </ol>
+
+          <div class="labs-code-wrap">
+
+            <button class="copy-btn" data-copy="#meme-code">COPY</button>
+
+            <pre id="meme-code" class="labs-code">
+
+&lt;!-- Gorboy Meme Generator iframe widget (compact mobile version) --&gt;
+
+&lt;iframe
+
+  src="https://gorboylabs.vercel.app/meme.html"
+
+  style="
+
+    width: 100%;
+
+    max-width: 480px;
+
+    height: 520px;
+
+    border: 0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    display:block;
+
+    margin:0 auto;
+
+  "
+
+  loading="lazy"
+
+&gt;&lt;/iframe&gt;
+
+            </pre>
+
+          </div>
+
+          <a
+
+            href="https://gorboylabs.vercel.app/meme.html"
+
+            target="_blank"
+
+            class="labs-btn labs-btn--small"
+
+          >
+
+            Open Meme Generator
+
+          </a>
+
+        </article>
+
+        <!-- SLOT A -->
+
+        <article class="labs-widget labs-widget--soon">
+
+          <div class="labs-widget-label labs-widget-label--soon">slot a</div>
+
+          <h3 class="labs-widget-title">Reserved Module</h3>
+
+          <div class="labs-widget-tag">coming soon</div>
+
+          <p class="labs-widget-desc">
+
+            Next tool for meme founders.
+
+          </p>
+
+        </article>
+
+        <!-- SLOT B -->
+
+        <article class="labs-widget labs-widget--soon">
+
+          <div class="labs-widget-label labs-widget-label--soon">slot b</div>
+
+          <h3 class="labs-widget-title">Reserved Module</h3>
+
+          <div class="labs-widget-tag">coming soon</div>
+
+          <p class="labs-widget-desc">
+
+            Reserved spot for future widget.
+
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- INTEGRATION GUIDE -->
+
+    <section id="integration" class="labs-section">
+
+      <h2 class="labs-section-title"><span>02</span> · integration guide</h2>
+
+      <p class="labs-body-text">
+
+        All Gorboy Labs widgets are designed to be
+
+        <strong>copy-paste only</strong>. No backend. No SDK.
+
+      </p>
+
+      <ol class="labs-steps">
+
+        <li>Pick a widget above.</li>
+
+        <li>Use the COPY button to grab its embed snippet.</li>
+
+        <li>Paste into your website / landing / tools page.</li>
+
+      </ol>
+
+      <p class="labs-body-text labs-body-text--muted">
+
+        If you can edit a webpage — you can embed Gorboy Labs.
+
+      </p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="labs-footer">
+
+      <span>GORBOY LABS — MEME.BUILD.REPEAT.</span>
+
+      <span>exclusive for gorbagana chain</span>
+
+    </footer>
+
+  </div>
+
+  <!-- COPY BUTTON LOGIC -->
+
+  <script>
+
+    document.querySelectorAll(".copy-btn").forEach((btn) => {
+
+      btn.addEventListener("click", () => {
+
+        const target = btn.getAttribute("data-copy");
+
+        const el = document.querySelector(target);
+
+        if (!el) return;
+
+        const raw = el.innerText.trim();
+
+        navigator.clipboard.writeText(raw).then(() => {
+
+          btn.textContent = "COPIED!";
+
+          setTimeout(() => (btn.textContent = "COPY"), 900);
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+    
+  </body>
+  
+</html>
